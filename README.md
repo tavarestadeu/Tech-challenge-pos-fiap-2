@@ -40,7 +40,7 @@ O projeto adota os princípios da **Clean Architecture**, promovendo desacoplame
 ### Pré-requisitos
 
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado e em execução.
-* [Git](https://git-scm.com/) para clonar o repositório.
+* [Git]([https://git-scm.com/](https://github.com/tavarestadeu/Tech-challenge-pos-fiap-2) para clonar o repositório.
 
 ### 1. Configurar Variáveis de Ambiente
 
