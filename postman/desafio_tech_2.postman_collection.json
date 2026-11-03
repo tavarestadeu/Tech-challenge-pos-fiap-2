@@ -1,0 +1,547 @@
+{
+  "info": {
+    "_postman_id": "aa2c4794-f201-43fc-91ee-a626f6f501c4",
+    "name": "desafio_tech_2",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "21269115"
+  },
+  "item": [
+    {
+      "name": "Cadastrar tipoUsuario",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nomeTipo\": \"Cliente\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/tipo-usuario",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "tipo-usuario"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar tipoUsuario por nome",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar tipoUsuario",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar tipoUsuario",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nomeTipo\": \"Dono de Restaurante\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/tipo-usuario/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "tipo-usuario",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar tipoUsuario",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nomeTipo\": \"Cliente\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/tipo-usuario/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "tipo-usuario",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cadastrar Usuario",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"cpf\": \"123.456.789-01\",\r\n    \"nome\": \"Jose\",\r\n    \"email\": \"jose@email\",\r\n    \"login\": \"Zé\",\r\n    \"senha\": \"123456\",\r\n    \"tipoUsuarioId\": 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/usuarios",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "usuarios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Usuario por nome",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Usuario por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/usuarios",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "usuarios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar Usuario",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"josedasilva@email.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/usuarios/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "usuarios",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar tipoUsuario por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/tipo-usuario/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "tipo-usuario",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar Usuario",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"cpf\": \"123.456.789-01\",\r\n    \"nome\": \"Jose\",\r\n    \"email\": \"jose@email\",\r\n    \"login\": \"Zé\",\r\n    \"senha\": \"123456\",\r\n    \"tipoUsuarioId\": 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/usuarios/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "usuarios",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Usuarios",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/usuarios",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "usuarios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cadastrar Restaurante",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nome\": \"Cantina Mamma Mia\",\r\n  \"endereco\": {\r\n    \"logradouro\": \"Rua das Flores\",\r\n    \"numero\": \"450\",\r\n    \"complemento\": null,\r\n    \"bairro\": \"Jardins\",\r\n    \"cidade\": \"Curitiba\",\r\n    \"uf\": \"PR\",\r\n    \"cep\": \"80010010\"\r\n  },\r\n  \"horarioFuncionamento\": \"Noturno\",\r\n  \"donoId\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/restaurantes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "restaurantes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Restaurantes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/restaurantes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "restaurantes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Busca Restaurantes por nome",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/restaurantes?nome=mamma",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "restaurantes"
+          ],
+          "query": [
+            {
+              "key": "nome",
+              "value": "mamma"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar Restaurante",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nome\": \"Sushi Express Central Gourmet\",\r\n  \"horarioFuncionamento\": \"Noturno\",\r\n  \"endereco\": {\r\n    \"complemento\": \"Loja B - Térreo\",\r\n    \"cep\": \"22240-001\"\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/restaurantes/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "restaurantes",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar Restaurante",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/restaurantes/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "restaurantes",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cadastrar ItemCardapio",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nome\": \"Petit Gâteau de Doce de Leite\",\r\n  \"descricao\": \"Bolinho quente recheado com doce de leite artesanal, acompanhado de uma bola de sorvete de baunilha e farofa de nozes.\",\r\n  \"preco\": 28.50,\r\n  \"apenasNoRestaurante\": true,\r\n  \"caminhoFoto\": \"/uploads/cardapio/petit-gateau-doce-de-leite.jpg\",\r\n  \"restauranteId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/item-cardapio",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "item-cardapio"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar ItemCardapio",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar itemCardapio por nome",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/item-cardapio?nome=pe",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "item-cardapio"
+          ],
+          "query": [
+            {
+              "key": "nome",
+              "value": "pe"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar ItemCardapio",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"descricao\": \"Bolinho quente recheado com doce de leite artesanal, acompanhado de sorvete de fava de baunilha e praliné de nozes.\",\r\n  \"preco\": 32.00\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/item-cardapio/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "item-cardapio",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar itemCardapio",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/item-cardapio/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "item-cardapio",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar ItemCardapio por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/item-cardapio/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "item-cardapio",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar restaurante por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/restaurantes/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "restaurantes",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
