@@ -92,7 +92,8 @@ public class UsuarioController {
 
     @Operation(summary = "Remove um usuário por ID", description = "Exclui permanentemente um usuário cadastrado no sistema.")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "204", description = "Usuário removido com sucesso (sem conteúdo)"),
+            @ApiResponse(responseCode = "204", description = "Usuário removido com sucesso (sem conteúdo)")
+    })
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id){
         usuarioService.delete(id);
